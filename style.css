@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     position: fixed;
     height: 80px;
@@ -8,24 +14,24 @@ nav {
 }
 
 :root {
+    --main-background-color: #F8F9FA;
     --code-icon-color: #E06D59;
+    --inside
 }
 
 .wrapper {
     padding-top: 80px;
     height: 100vh;
     display: flex;
-    background-color: green;
 }
 
 .sidebar {
+    background-image: url(img/sidebar-bg.png);
     width: 200px;
-    background-color: aquamarine;
     height: 100%;
 }
 
 .main {
-    background-color: rebeccapurple;
     width: calc(100% - 200px);
     overflow-y: auto;
 }
@@ -33,7 +39,13 @@ nav {
 .inside-nav {
     height: 80px;
     background-color: blue;
+    
 }
+
+.card {
+    margin: 15px;
+}
+
 
 .d-bug {
     border: 1px solid red;
@@ -43,8 +55,6 @@ nav {
 td {
     text-align: center;
 }
-
-
 
 .code-icon {
     height: 30px;
@@ -57,7 +67,4 @@ td {
     color: white;
 }
 
-td {
-    
-}
 
