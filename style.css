@@ -4,11 +4,14 @@
     padding: 0;
 }
 
+ul {
+    list-style: none;
+}
+
 nav {
     position: fixed;
     height: 80px;
     width: 100%;
-    background-color: black;
     left: 0;
     top: 0;
 }
@@ -16,7 +19,8 @@ nav {
 :root {
     --main-background-color: #F8F9FA;
     --code-icon-color: #E06D59;
-    --inside
+    --sidebar-background-color: #142335;
+    --inside-navbar-background-color: #1648ad;
 }
 
 .wrapper {
@@ -27,6 +31,7 @@ nav {
 
 .sidebar {
     background-image: url(img/sidebar-bg.png);
+    background-color: var(--sidebar-background-color);
     width: 200px;
     height: 100%;
 }
@@ -38,14 +43,12 @@ nav {
 
 .inside-nav {
     height: 80px;
-    background-color: blue;
-    
+    background-color: var(--inside-navbar-background-color);
 }
 
 .card {
     margin: 15px;
 }
-
 
 .d-bug {
     border: 1px solid red;
@@ -66,5 +69,26 @@ td {
     justify-content: center;
     color: white;
 }
+
+ .sidebar i {
+    height: 30px;
+    width: 30px;
+}
+
+@media all and (max-width: 992px) {
+    
+    .main {
+        width: calc(100% - 50px);
+    }
+
+    .sidebar {
+        width: 50px;
+    }
+
+    .link {
+        display: none;
+    }
+}
+
 
 
