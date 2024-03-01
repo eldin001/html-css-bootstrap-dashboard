@@ -1,19 +1,9 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* GENERAL */
+body {
 
-ul {
-    list-style: none;
-}
-
-nav {
-    position: fixed;
-    height: 80px;
-    width: 100%;
-    left: 0;
-    top: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 :root {
@@ -29,6 +19,30 @@ nav {
     display: flex;
 }
 
+.img {
+    max-width: 100%;
+}
+
+.secondary-img img{
+    width: 50px;
+}
+
+/* SIDEBAR */
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 3px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+    background-color: gray;
+}
+
 .sidebar {
     background-image: url(img/sidebar-bg.png);
     background-color: var(--sidebar-background-color);
@@ -36,9 +50,23 @@ nav {
     height: 100%;
 }
 
-.main {
-    width: calc(100% - 200px);
-    overflow-y: auto;
+.sidebar i {
+    height: 30px;
+    width: 30px;
+}
+
+.side-nav-container {
+    width: 14%;
+}
+
+/* NAVBAR */
+
+nav {   
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 .inside-nav {
@@ -46,15 +74,26 @@ nav {
     background-color: var(--inside-navbar-background-color);
 }
 
+/* MAIN */
+
+.main {
+    width: calc(100% - 200px);
+    overflow-y: auto;
+}
+
+/* CARD */
+
 .card {
     margin: 15px;
+    position: static;
 }
 
-.d-bug {
-    border: 1px solid red;
+.card.header {
+    position: static;
 }
 
-/*  */
+/* TABLE */
+
 td {
     text-align: center;
 }
@@ -70,26 +109,13 @@ td {
     color: white;
 }
 
- .sidebar i {
-    height: 30px;
-    width: 30px;
-}
-
-.side-nav-container {
-    width: 14%;
-}
-
-.img {
-    max-width: 100%;
-}
-
-.secondary-img img{
-    width: 50px;
-}
+/* BUTTON */
 
 button {
     background-color: white;
 }
+
+/* MEDIA QUERIS */
 
 @media all and (max-width: 992px) {
 
@@ -116,7 +142,17 @@ button {
     .side-nav-container {
         width: 5%;
     }
+
 }
 
+@media all and (max-width: 768px) {
+    .inside-nav {
+        height: 200px;
+    }
+
+    .first {
+        margin-top: 135px;
+    }
+}
 
 
