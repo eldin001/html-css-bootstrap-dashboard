@@ -75,7 +75,31 @@ td {
     width: 30px;
 }
 
+.side-nav-container {
+    width: 14%;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.secondary-img img{
+    width: 50px;
+}
+
+button {
+    background-color: white;
+}
+
 @media all and (max-width: 992px) {
+
+    .secondary-img {
+        display: block;
+    }
+
+    .main-img {
+        display: none;
+    }
     
     .main {
         width: calc(100% - 50px);
@@ -87,6 +111,10 @@ td {
 
     .link {
         display: none;
+    }
+
+    .side-nav-container {
+        width: 5%;
     }
 }
 

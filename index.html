@@ -12,12 +12,32 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header>
-    <nav>
-      <div><img src="img/logo.svg" alt="logo"></div>
-
+    <nav class="d-flex align-items-center ">
+      <div class="ms-2 side-nav-container main-img d-none d-xl-block"><img src="img/logo.svg" alt="logo"></div>
+      <div class="ms-2 secondary-img d-block d-xl-none"><img src="img/mobile-logo.png" alt=""></div>
+      <nav class="navbar">
+        <form class="container-fluid">
+          <div class="input-group">
+            <span class="input-group-text bg-body-secondary "><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="form-control border-start-0 bg-body-secondary " placeholder="Prova a cercare: Lezioni di laravel" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </form>
+      </nav>
+      <div class="side-nav-container d-flex justify-content-center ">
+        <i class="p-2 d-xl-block d-none fa-solid fa-list-ul" style="color: #4f4f4f;"></i>
+        <i class="p-2 d-xl-block d-none fa-solid fa-circle-question" style="color: #4f4f4f;"></i>
+        <i class="p-2 d-xl-block d-none fa-solid fa-ellipsis-vertical" style="color: #4f4f4f;"></i>
+          <button class="border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="p-2 fa-solid fa-bell" style="color: #ffbe33;"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+      </div>
     </nav>
   </header>
   <div class="wrapper">
@@ -37,7 +57,7 @@
     <div class="main bg-light">
       <!-- INSIDE NAV -->
       <div class="inside-nav" data-bs-theme="blue">
-        <div class="d-flex justify-content-between ">
+        <div class="d-flex justify-content-between flex-wrap">
           <div class="p-1">
             <div class="d-flex align-items-center">
               <span class="fs-2 text-light">Boolean</span>
